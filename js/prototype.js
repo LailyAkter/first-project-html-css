@@ -1,6 +1,6 @@
 // prototype chaining
-const Product = {
-    name:'',
+const product = {
+    name:"",
     price:"",
     __proto__:{
         displayInfo(name,price){
@@ -11,19 +11,23 @@ const Product = {
     }
 }
 
-const product1 = Product.displayInfo("Widget", 10.99);
-const product2 = Product.displayInfo("Gadget", 29.99);
+const product1 = product.displayInfo("product1", 10.99);
+const product2 = product.displayInfo("product2", 29.99);
 
-function Person (name,email,roll){
-    this.name = name;
-    this.email = email;
-    this.roll = roll;
-}
+// function Person (name,email,roll){
+//     this.name = name;
+//     this.email = email;
+//     this.roll = roll;
+// }
 
-Person.prototype.displayInfo = function (){
-    console.log(`name : ${this.name},email : ${this.email} ,roll : ${this.roll}`);
-}
+// Person.prototype.displayInfo = function (){
+//     console.log(`name : ${this.name},email : ${this.email} ,roll : ${this.roll}`);
+// }
 
-const person1 = new Person("laily",'laily12@gmail.com',20);
+// const person1 = new Person("laily",'laily12@gmail.com',20);
+// const person2 = new Person("rabeya",'rabeya@gmail.com',20);
 
-person1.displayInfo();
+// person1.displayInfo();
+// person2.displayInfo();
+
+// console.log(Person.prototype)
