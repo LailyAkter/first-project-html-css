@@ -3,6 +3,7 @@ const product = {
     name:"",
     price:"",
     __proto__:{
+        isEmpty:false,
         displayInfo(name,price){
             this.name = name;
             this.price = price;
@@ -10,11 +11,11 @@ const product = {
         }
     }
 }
-
+    
 const product1 = product.displayInfo("product1", 10.99);
 const product2 = product.displayInfo("product2", 29.99);
 
-if(product.displayInfo){
+if(product.isEmpty){
     console.log("Product Added Successfully !");
 }else{
     console.log("Product don't added!");
