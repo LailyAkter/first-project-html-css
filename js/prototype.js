@@ -11,8 +11,15 @@ const product = {
     }
 }
 
+if(product.displayInfo){
+    console.log("Product Added Successfully !");
+}else{
+    console.log("Product don't added!");
+}
+
 const product1 = product.displayInfo("product1", 10.99);
 const product2 = product.displayInfo("product2", 29.99);
+
 
 // function Person (name,email,roll){
 //     this.name = name;
