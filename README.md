@@ -215,6 +215,7 @@ for (let x of mixed) {
 }
 
 <h2>The While Loop</h2>
+var i = 3;
 while (i < 10) {
   console.log("The number is " + i);
   i++;
