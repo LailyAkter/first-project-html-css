@@ -162,6 +162,75 @@ const newArr = myArr.flat();
 </code>
 
 
+<h2>JavaScript For Loop</h2>
+<p>Loops can execute a block of code a number of times.</p>
+
+<h2>Different Kinds of Loops</h2>
+<p>JavaScript supports different kinds of loops:</p>
+<ul>
+  <li><mark>for</mark> - loops through a block of code a number of times</li>
+  <li><mark>for/in</mark> - loops through the properties of an object</li>
+  <li><mark>for/of</mark> - loops through the values of an iterable object</li>
+  <li><mark>while</mark> - loops through a block of code while a specified condition is true</li>
+  <li><mark>do/while</mark> - also loops through a block of code while a specified condition is true</li>
+</ul>
+
+<h2>The For Loop</h2>
+
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+
+<p>
+Expression 1 is executed (one time) before the execution of the code block.
+
+Expression 2 defines the condition for executing the code block.
+
+Expression 3 is executed (every time) after the code block has been executed.
+</p>
+
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  console.log("The number is " + i);
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) { continue; }
+  console.log("The number is " + i);
+}
+
+<h2>The For In Loop</h2>
+const person = {fname:"laily", lname:"akter", age:21};
+
+for (let x in person) {
+  console.log(person[x]);
+}
+
+<h2>The For Of Loop</h2>
+
+const mixed = ["Mango", "Orange", "Yellow"];
+
+for (let x of mixed) {
+  console.log(x);
+}
+
+<h2>The While Loop</h2>
+while (i < 10) {
+  console.log("The number is " + i);
+  i++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
